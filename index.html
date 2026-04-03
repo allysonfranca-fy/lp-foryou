@@ -5,21 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>For You - Data & Solutions</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- DataLayer base -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      var formData = new FormData(this);
+
+      dataLayer.push({
+        event: 'form_submit',
+        form_name: 'contact_lp',
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone')
+      });
+    });
+  </script>
 </head>
+
 <body class="bg-gray-50 text-gray-900">
 
-  <!-- HERO (VENDA DIRETA) -->
+  <!-- HERO -->
   <section class="bg-black text-white py-24">
     <div class="max-w-5xl mx-auto px-6 text-center">
       <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
         Seus dados estão errados — e isso está fazendo você perder dinheiro
       </h1>
       <p class="text-lg md:text-xl mb-8">
-        Corrigimos seu tracking, estruturamos seus eventos e mostramos exatamente o que gera resultado no seu negócio.
+        Corrijo seu tracking e te mostro exatamente o que está gerando vendas — sem achismo.
       </p>
       <a href="#contato" class="bg-white text-black px-8 py-4 rounded-2xl font-semibold text-lg">
-        Quero um diagnóstico gratuito
+        Quero corrigir meu tracking agora
       </a>
+      <p class="text-sm mt-4 text-gray-300">Resposta em até 10 minutos</p>
     </div>
   </section>
 
@@ -27,100 +44,109 @@
   <section class="py-20">
     <div class="max-w-5xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-12">
-        Se você trabalha com tráfego, provavelmente já passou por isso:
+        Se você investe em tráfego, provavelmente está passando por isso:
       </h2>
 
       <div class="grid md:grid-cols-2 gap-6 text-lg">
-        <div class="bg-white p-6 rounded-2xl shadow">❌ Eventos duplicados ou disparando errado</div>
-        <div class="bg-white p-6 rounded-2xl shadow">❌ Conversões não batem com vendas reais</div>
+        <div class="bg-white p-6 rounded-2xl shadow">❌ Eventos duplicados ou quebrados</div>
+        <div class="bg-white p-6 rounded-2xl shadow">❌ Conversões não batem com vendas</div>
         <div class="bg-white p-6 rounded-2xl shadow">❌ Pixel e GA4 com dados inconsistentes</div>
-        <div class="bg-white p-6 rounded-2xl shadow">❌ Decisões sendo tomadas no “achismo”</div>
+        <div class="bg-white p-6 rounded-2xl shadow">❌ Decisões baseadas em achismo</div>
       </div>
+    </div>
+  </section>
+
+  <!-- IMPACTO -->
+  <section class="bg-red-50 py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Isso está te fazendo perder dinheiro</h2>
+      <p class="text-lg">
+        Você pode estar investindo em campanhas que NÃO geram retorno — e pausando aquelas que realmente vendem.
+      </p>
     </div>
   </section>
 
   <!-- SOLUÇÃO -->
-  <section class="bg-gray-100 py-20">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">A gente resolve isso pra você</h2>
-      <p class="text-lg max-w-3xl mx-auto">
-        Implementamos uma estrutura de dados confiável para que você saiba exatamente de onde vêm suas vendas e onde investir para crescer.
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Eu resolvo isso pra você</h2>
+      <p class="text-lg">
+        Estruturo seu tracking do zero ou corrijo o atual para você ter dados confiáveis e tomar decisões que aumentam seu faturamento.
       </p>
     </div>
   </section>
 
-  <!-- SERVIÇOS (FOCO EM RESULTADO) -->
-  <section class="py-20">
+  <!-- SERVIÇOS -->
+  <section class="py-20 bg-gray-100">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">O que fazemos</h2>
+      <h2 class="text-3xl font-bold text-center mb-12">O que eu faço</h2>
 
       <div class="grid md:grid-cols-3 gap-6">
-
         <div class="bg-white p-6 rounded-2xl shadow">
           <h3 class="font-bold text-xl mb-2">Tracking Completo</h3>
-          <p>Implementação de GA4, GTM e pixels com dados confiáveis e sem duplicidade.</p>
+          <p>GA4, GTM e Pixels implementados corretamente.</p>
         </div>
 
         <div class="bg-white p-6 rounded-2xl shadow">
-          <h3 class="font-bold text-xl mb-2">Mapeamento de Eventos</h3>
-          <p>Estrutura completa de dataLayer para e-commerce e geração de leads.</p>
+          <h3 class="font-bold text-xl mb-2">Eventos Personalizados</h3>
+          <p>DataLayer estruturado para e-commerce e leads.</p>
         </div>
 
         <div class="bg-white p-6 rounded-2xl shadow">
           <h3 class="font-bold text-xl mb-2">Auditoria</h3>
-          <p>Identificamos erros que estão prejudicando suas campanhas e relatórios.</p>
+          <p>Identifico erros críticos no seu tracking atual.</p>
         </div>
 
         <div class="bg-white p-6 rounded-2xl shadow">
           <h3 class="font-bold text-xl mb-2">Integrações</h3>
-          <p>Google Ads, Meta Ads, APIs e CRM funcionando corretamente.</p>
+          <p>Google Ads, Meta Ads, APIs e CRM.</p>
         </div>
 
         <div class="bg-white p-6 rounded-2xl shadow">
           <h3 class="font-bold text-xl mb-2">Dashboards</h3>
-          <p>Visualização clara dos seus resultados para tomada de decisão.</p>
+          <p>Visualização clara dos resultados.</p>
         </div>
 
         <div class="bg-white p-6 rounded-2xl shadow">
           <h3 class="font-bold text-xl mb-2">Consultoria</h3>
-          <p>Acompanhamento estratégico para escalar sua operação com dados.</p>
+          <p>Suporte estratégico para escalar com dados.</p>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- PROVA / AUTORIDADE -->
-  <section class="bg-black text-white py-20">
+  <!-- PROVA -->
+  <section class="py-20">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">Por que confiar?</h2>
+      <h2 class="text-3xl font-bold mb-6">Experiência prática</h2>
       <p class="text-lg">
-        Experiência prática com implementação de tracking, correção de eventos e estruturação de dados para negócios que investem em mídia e precisam de precisão.
+        +50 implementações de tracking realizadas<br>
+        Projetos de e-commerce e geração de leads<br>
+        Experiência com GA4, GTM, Meta e integrações
       </p>
     </div>
   </section>
 
-  <!-- OFERTA -->
-  <section class="py-20">
+  <!-- URGÊNCIA -->
+  <section class="bg-yellow-50 py-16">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-4">Diagnóstico gratuito</h2>
-      <p class="mb-6 text-lg">
-        Vamos analisar seu tracking atual e te mostrar exatamente onde estão os erros e oportunidades.
+      <p class="text-lg font-semibold">
+        Atendo poucos projetos por mês para garantir qualidade.
       </p>
-      <a href="#contato" class="bg-black text-white px-8 py-4 rounded-2xl text-lg">
-        Quero meu diagnóstico
-      </a>
     </div>
   </section>
 
   <!-- CTA FINAL -->
-  <section id="contato" class="bg-gray-100 py-20">
+  <section id="contato" class="py-24">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-4">Fale comigo agora</h2>
-      <p class="mb-6">Clique abaixo e vamos entender seu cenário.</p>
-      <a href="https://wa.me/SEUNUMERO" class="bg-black text-white px-8 py-4 rounded-2xl">
-        Chamar no WhatsApp
+      <h2 class="text-3xl font-bold mb-4">Vamos corrigir isso agora</h2>
+      <p class="mb-6 text-lg">Clique abaixo e fale comigo no WhatsApp</p>
+      <a href="https://wa.me/5581994468364"
+         onclick="dataLayer.push({event: 'click_whatsapp'});"
+         class="bg-black text-white px-10 py-4 rounded-2xl text-lg">
+        Falar no WhatsApp
       </a>
+      <p class="text-sm mt-4 text-gray-500">Resposta rápida</p>
     </div>
   </section>
 
@@ -128,6 +154,47 @@
   <footer class="bg-black text-white py-6 text-center">
     <p>© 2026 For You - Data & Solutions</p>
   </footer>
+
+  <!-- CONTATO FORM -->
+  <section class="bg-white py-24">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Ou se preferir, deixe seus dados</h2>
+
+      <form id="contactForm" action="https://formspree.io/f/mykbnknn" method="POST" class="space-y-6">
+        <input type="text" name="name" placeholder="Seu nome" required class="w-full p-4 border rounded-xl" />
+        <input type="email" name="email" placeholder="Seu email" required class="w-full p-4 border rounded-xl" />
+        <input type="tel" name="phone" placeholder="Seu telefone" required class="w-full p-4 border rounded-xl" />
+        <textarea name="message" placeholder="Fale brevemente sobre sua necessidade" class="w-full p-4 border rounded-xl"></textarea>
+
+        <button type="submit" class="w-full bg-black text-white py-4 rounded-2xl text-lg">
+          Enviar contato
+        </button>
+      </form>
+
+      <p id="formSuccess" class="hidden text-green-600 text-center mt-4">
+        Mensagem enviada! Em breve entrarei em contato.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var formData = new FormData(this);
+
+      dataLayer.push({
+        event: 'form_submit',
+        form_name: 'contact_lp',
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone')
+      });
+
+      document.getElementById('formSuccess').classList.remove('hidden');
+      this.reset();
+    });
+  </script>
 
 </body>
 </html>
