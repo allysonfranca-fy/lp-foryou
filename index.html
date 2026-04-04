@@ -13,12 +13,28 @@
 
 <body class="bg-black text-white">
 
+  <!-- HEADER FIXO -->
+  <header class="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-md z-50 border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <img src="logo.png" class="w-32 md:w-40 drop-shadow-[0_0_20px_rgba(168,85,247,0.5)]">
+
+      <a href="#contato"
+         onclick="dataLayer.push({event: 'click_header_cta'});"
+         class="bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-2 rounded-xl text-sm font-semibold">
+        Falar com especialista
+      </a>
+    </div>
+  </header>
+
+  <div class="pt-24">
+
   <!-- HERO -->
   <section class="py-24">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
       <div>
-        <img src="logo.png" class="mb-6 w-40">
+        <img src="logo.png" 
+             class="mb-6 w-64 md:w-80 drop-shadow-[0_0_30px_rgba(168,85,247,0.7)] animate-pulse">
 
         <h1 class="text-4xl md:text-5xl font-bold mb-6">
           Você pode estar perdendo dinheiro todos os dias sem perceber
@@ -35,7 +51,7 @@
         <a href="#contato"
            onclick="dataLayer.push({event: 'click_cta_hero'});"
            class="bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-4 rounded-2xl text-lg font-semibold">
-          Podemos te ajudar!
+          Queremos corrigir seu tracking agora
         </a>
 
         <p class="text-sm mt-4 text-gray-400">Resposta em até 10 minutos</p>
@@ -119,7 +135,7 @@
       <p class="text-lg text-gray-300">
         +50 projetos de tracking implementados<br>
         Projetos de e-commerce e geração de leads<br>
-        Experiência com GA4, GTM (Server e Web), Meta e integrações
+        Experiência com GA4, GTM, Meta e integrações
       </p>
     </div>
   </section>
@@ -134,7 +150,10 @@
        class="bg-gradient-to-r from-purple-500 to-blue-500 px-10 py-4 rounded-2xl text-lg">
       Falar no WhatsApp
     </a>
-    
+
+    <p class="text-yellow-400 mt-4 text-sm">
+      Atendemos no máximo 5 projetos por mês
+    </p>
   </section>
 
   <!-- FORM -->
@@ -178,6 +197,8 @@
   <footer class="text-center py-6 text-gray-500">
     © 2026 For You - Data & Solutions
   </footer>
+
+  </div>
 
 </body>
 </html>
