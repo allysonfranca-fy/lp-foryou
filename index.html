@@ -34,12 +34,10 @@ html { scroll-behavior: smooth; }
 
 <body class="bg-black text-white">
 
-<!-- URGÊNCIA -->
 <div class="bg-gradient-to-r from-purple-600 to-blue-600 text-center text-sm py-2">
-⚠️ Estamos com apenas 5 vagas abertas este mês
+Estruturamos dados para decisões mais inteligentes.
 </div>
 
-<!-- HEADER -->
 <header class="fixed w-full bg-black/80 backdrop-blur z-50 border-b border-gray-800">
 <div class="max-w-6xl mx-auto flex justify-between items-center px-4 md:px-6 py-3">
 
@@ -150,7 +148,6 @@ Empresas que precisam de dados confiáveis já estão fazendo isso:
 <!-- RESULTADOS -->
 <section id="resultados" class="py-16 md:py-20 text-center fade">
 <div class="max-w-6xl mx-auto px-4 md:px-6">
-
 <h2 class="text-2xl md:text-3xl font-bold mb-6">
 Impacto direto após correção de tracking
 </h2>
@@ -163,12 +160,10 @@ Veja como os dados mudam quando o tracking é corrigido
 
 <div class="mb-8">
 <p class="text-red-400 mb-2">Antes</p>
-
 <p class="text-sm text-gray-400">Precisão dos dados</p>
 <div class="bg-gray-800 rounded-full mb-3">
 <div class="bar bg-red-500 w-1/3"></div>
 </div>
-
 <p class="text-sm text-gray-400">Confiança nas decisões</p>
 <div class="bg-gray-800 rounded-full">
 <div class="bar bg-red-500 w-1/4"></div>
@@ -177,12 +172,10 @@ Veja como os dados mudam quando o tracking é corrigido
 
 <div>
 <p class="text-green-400 mb-2">Depois</p>
-
 <p class="text-sm text-gray-400">Precisão dos dados</p>
 <div class="bg-gray-800 rounded-full mb-3">
 <div class="bar bg-green-500 w-full"></div>
 </div>
-
 <p class="text-sm text-gray-400">Confiança nas decisões</p>
 <div class="bg-gray-800 rounded-full">
 <div class="bar bg-green-500 w-11/12"></div>
@@ -202,14 +195,38 @@ Quero esse nível de clareza
 </div>
 </section>
 
-<!-- COMO FUNCIONA -->
-<section id="como-funciona" class="py-16 md:py-24 text-center fade">
-<h2 class="text-2xl md:text-3xl font-bold mb-12">Como funciona</h2>
+<!-- COMO FUNCIONA (AJUSTADO) -->
+<section id="como-funciona" class="py-24 text-center fade">
+<h2 class="text-3xl font-bold mb-12">Como funciona nosso processo</h2>
 
-<div class="max-w-6xl mx-auto px-4 md:px-6 grid md:grid-cols-3 gap-6">
-<div class="p-6 bg-gray-900 rounded-2xl">Diagnóstico</div>
-<div class="p-6 bg-gray-900 rounded-2xl">Implementação</div>
-<div class="p-6 bg-gray-900 rounded-2xl">Validação</div>
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+
+<div class="p-6 border border-gray-800 rounded-2xl bg-gray-900">
+<div class="text-purple-400 text-2xl font-bold mb-4">01</div>
+<h3 class="font-bold mb-2">Diagnóstico</h3>
+<p class="text-gray-400">Analisamos seu tracking atual e identificamos falhas</p>
+</div>
+
+<div class="p-6 border border-gray-800 rounded-2xl bg-gray-900">
+<div class="text-blue-400 text-2xl font-bold mb-4">02</div>
+<h3 class="font-bold mb-2">Implementação</h3>
+<p class="text-gray-400">Corrigimos e estruturamos seus dados corretamente</p>
+</div>
+
+<div class="p-6 border border-gray-800 rounded-2xl bg-gray-900">
+<div class="text-green-400 text-2xl font-bold mb-4">03</div>
+<h3 class="font-bold mb-2">Validação</h3>
+<p class="text-gray-400">Garantimos dados confiáveis para decisões seguras</p>
+</div>
+
+</div>
+
+<div class="mt-16">
+<a href="#contato"
+onclick="dataLayer.push({event: 'click_cta_como_funciona'});"
+class="bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-4 rounded-2xl text-lg font-semibold">
+Quero implementar isso no meu negócio
+</a>
 </div>
 </section>
 
