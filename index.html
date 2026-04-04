@@ -9,6 +9,12 @@
   <script>
     window.dataLayer = window.dataLayer || [];
   </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body class="bg-black text-white">
@@ -113,7 +119,7 @@
   </section>
 
   <!-- COMO FUNCIONA -->
-  <section id="como-funciona" class="py-24 bg-black text-center">
+  <section id="como-funciona" class="py-24 text-center">
     <h2 class="text-3xl font-bold mb-12">Como funciona nosso processo</h2>
 
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
@@ -136,6 +142,14 @@
         <p class="text-gray-400">Garantimos dados confiáveis para decisões seguras</p>
       </div>
 
+    </div>
+
+    <div class="mt-16">
+      <a href="#contato"
+         onclick="dataLayer.push({event: 'click_cta_como_funciona'});"
+         class="bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-4 rounded-2xl text-lg font-semibold">
+        Quero implementar isso no meu negócio
+      </a>
     </div>
   </section>
 
@@ -162,7 +176,9 @@
       Falar no WhatsApp
     </a>
 
-
+    <p class="text-yellow-400 mt-4 text-sm">
+      Atendemos no máximo 5 projetos por mês
+    </p>
   </section>
 
   <!-- FORM -->
@@ -188,6 +204,7 @@
     </div>
   </section>
 
+  <!-- TRACKING FORM -->
   <script>
     document.getElementById('contactForm').addEventListener('submit', function() {
       var formData = new FormData(this);
@@ -199,6 +216,17 @@
         phone: formData.get('phone')
       });
     });
+  </script>
+
+  <!-- SCROLL FIX -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    };
   </script>
 
   <footer class="text-center py-6 text-gray-500">
