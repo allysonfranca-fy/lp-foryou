@@ -17,38 +17,35 @@
   <section class="py-24">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
-      <!-- TEXTO -->
-      <div class="text-center md:text-left">
-        <img src="logo.png" alt="For You" class="mx-auto md:mx-0 mb-6 w-40">
+      <div>
+        <img src="logo.png" class="mb-6 w-40">
 
-        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          Seus dados estão errados — e isso está fazendo você perder dinheiro
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          Você pode estar perdendo dinheiro todos os dias sem perceber
         </h1>
 
-        <p class="text-lg md:text-xl mb-8 text-gray-300">
-          Corrijo seu tracking e te mostro exatamente o que está gerando vendas — sem achismo.
+        <p class="text-lg text-gray-300 mb-4">
+          Seus dados estão errados — e isso faz você investir em campanhas que não dão retorno.
+        </p>
+
+        <p class="text-lg text-gray-400 mb-8">
+          Nós corrigimos seu tracking e mostramos exatamente o que gera vendas de verdade.
         </p>
 
         <a href="#contato"
            onclick="dataLayer.push({event: 'click_cta_hero'});"
-           class="inline-block bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-4 rounded-2xl font-semibold text-lg">
-          Quero corrigir meu tracking agora
+           class="bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-4 rounded-2xl text-lg font-semibold">
+          Queremos corrigir seu tracking agora
         </a>
 
         <p class="text-sm mt-4 text-gray-400">Resposta em até 10 minutos</p>
       </div>
 
-      <!-- MASCOTE AO LADO DO CTA -->
       <div class="flex justify-center">
-        <img src="mascote.png" alt="Mascote" class="w-72 md:w-96">
+        <img src="mascote.png" class="w-80">
       </div>
 
     </div>
-  </section>
-
-  <!-- MASCOTE -->
-  <section class="text-center pb-16">
-    <img src="mascote.png" alt="Mascote" class="mx-auto w-64">
   </section>
 
   <!-- PROBLEMAS -->
@@ -58,21 +55,35 @@
         Se você investe em tráfego, provavelmente está passando por isso:
       </h2>
 
-      <div class="grid md:grid-cols-2 gap-6 text-lg">
-        <div class="bg-black p-6 rounded-2xl border border-gray-700">❌ Eventos duplicados ou quebrados</div>
-        <div class="bg-black p-6 rounded-2xl border border-gray-700">❌ Conversões não batem com vendas</div>
-        <div class="bg-black p-6 rounded-2xl border border-gray-700">❌ Pixel e GA4 com dados inconsistentes</div>
-        <div class="bg-black p-6 rounded-2xl border border-gray-700">❌ Decisões baseadas em achismo</div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 border border-gray-700 rounded-2xl">❌ Eventos duplicados ou quebrados</div>
+        <div class="p-6 border border-gray-700 rounded-2xl">❌ Conversões não batem com vendas</div>
+        <div class="p-6 border border-gray-700 rounded-2xl">❌ Pixel e GA4 com dados inconsistentes</div>
+        <div class="p-6 border border-gray-700 rounded-2xl">❌ Decisões baseadas em achismo</div>
       </div>
     </div>
   </section>
 
   <!-- IMPACTO -->
   <section class="py-20 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-red-400">
+      Isso pode estar fazendo você perder dinheiro
+    </h2>
+
+    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+      Você pode estar investindo R$2.000 em anúncios achando que dá lucro…
+      quando na verdade está no prejuízo — e nem sabe.
+    </p>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section class="py-20 text-center">
     <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-6 text-red-400">Isso está te fazendo perder dinheiro</h2>
+      <h2 class="text-3xl font-bold mb-6">Resultados que você pode esperar</h2>
       <p class="text-lg text-gray-300">
-        Você pode estar investindo em campanhas que NÃO geram retorno — e pausando aquelas que realmente vendem.
+        ✔ Saber exatamente de onde vêm suas vendas<br>
+        ✔ Parar de investir em campanhas que não convertem<br>
+        ✔ Tomar decisões baseadas em dados reais
       </p>
     </div>
   </section>
@@ -80,55 +91,76 @@
   <!-- SERVIÇOS -->
   <section class="py-20 bg-gray-900">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">O que eu faço</h2>
+      <h2 class="text-3xl font-bold text-center mb-12">O que fazemos</h2>
 
       <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-black p-6 rounded-2xl border border-gray-700">
-          <h3 class="font-bold text-xl mb-2">Tracking Completo</h3>
-          <p>GA4, GTM e Pixels implementados corretamente.</p>
+        <div class="p-6 border border-gray-700 rounded-2xl">
+          <h3 class="font-bold mb-2">Tracking Completo</h3>
+          <p>GA4, GTM e Pixels implementados corretamente</p>
         </div>
 
-        <div class="bg-black p-6 rounded-2xl border border-gray-700">
-          <h3 class="font-bold text-xl mb-2">Eventos Personalizados</h3>
-          <p>DataLayer estruturado para e-commerce e leads.</p>
+        <div class="p-6 border border-gray-700 rounded-2xl">
+          <h3 class="font-bold mb-2">Eventos Personalizados</h3>
+          <p>DataLayer estruturado para e-commerce e leads</p>
         </div>
 
-        <div class="bg-black p-6 rounded-2xl border border-gray-700">
-          <h3 class="font-bold text-xl mb-2">Auditoria</h3>
-          <p>Identifico erros críticos no seu tracking atual.</p>
+        <div class="p-6 border border-gray-700 rounded-2xl">
+          <h3 class="font-bold mb-2">Auditoria</h3>
+          <p>Identificamos erros críticos no seu tracking</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA FINAL -->
-  <section id="contato" class="py-24 text-center">
+  <!-- PROVA -->
+  <section class="py-20 text-center">
     <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-4">Vamos corrigir isso agora</h2>
-      <p class="mb-6 text-lg text-gray-300">Clique abaixo e fale comigo no WhatsApp</p>
-
-      <a href="https://wa.me/5581994468364"
-         onclick="dataLayer.push({event: 'click_whatsapp'});"
-         class="bg-gradient-to-r from-purple-500 to-blue-500 px-10 py-4 rounded-2xl text-lg">
-        Falar no WhatsApp
-      </a>
+      <h2 class="text-3xl font-bold mb-6">Experiência prática</h2>
+      <p class="text-lg text-gray-300">
+        +50 projetos de tracking implementados<br>
+        Projetos de e-commerce e geração de leads<br>
+        Experiência com GA4, GTM, Meta e integrações
+      </p>
     </div>
   </section>
 
+  <!-- CTA -->
+  <section id="contato" class="py-24 text-center">
+    <h2 class="text-3xl font-bold mb-4">Vamos corrigir isso agora</h2>
+    <p class="mb-6 text-gray-300">Clique abaixo e fale com nosso time</p>
+
+    <a href="https://wa.me/5581994468364"
+       onclick="dataLayer.push({event: 'click_whatsapp'});"
+       class="bg-gradient-to-r from-purple-500 to-blue-500 px-10 py-4 rounded-2xl text-lg">
+      Falar no WhatsApp
+    </a>
+
+    <p class="text-yellow-400 mt-4 text-sm">
+      Atendemos no máximo 5 projetos por mês
+    </p>
+  </section>
+
   <!-- FORM -->
-  <section class="bg-gray-900 py-24">
+  <section class="py-24 bg-gray-900">
     <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-8">Ou deixe seus dados</h2>
 
-      <form id="contactForm" action="https://formspree.io/f/SEU_FORM_ID" method="POST" class="space-y-6">
-        <input type="text" name="name" placeholder="Seu nome" required class="w-full p-4 rounded-xl text-black" />
-        <input type="email" name="email" placeholder="Seu email" required class="w-full p-4 rounded-xl text-black" />
-        <input type="tel" name="phone" placeholder="Seu telefone" required class="w-full p-4 rounded-xl text-black" />
-        <textarea name="message" placeholder="Fale sobre sua necessidade" class="w-full p-4 rounded-xl text-black"></textarea>
+      <p class="text-center text-lg mb-6 text-gray-300">
+        Prefere que nossa equipe analise seu tracking?  
+        Deixe seus dados que entraremos em contato
+      </p>
 
-        <button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-blue-500 py-4 rounded-2xl text-lg">
+      <form action="https://formspree.io/f/mykbnknn" method="POST" id="contactForm" class="space-y-6">
+
+        <input type="hidden" name="_subject" value="Novo lead - LP ForYou">
+
+        <input type="text" name="name" placeholder="Seu nome" required class="w-full p-4 rounded-xl text-black">
+        <input type="email" name="email" placeholder="Seu email" required class="w-full p-4 rounded-xl text-black">
+        <input type="tel" name="phone" placeholder="Seu telefone" required class="w-full p-4 rounded-xl text-black">
+
+        <button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-blue-500 py-4 rounded-2xl">
           Enviar contato
         </button>
+
       </form>
     </div>
   </section>
@@ -146,7 +178,7 @@
     });
   </script>
 
-  <footer class="bg-black text-center py-6 text-gray-500">
+  <footer class="text-center py-6 text-gray-500">
     © 2026 For You - Data & Solutions
   </footer>
 
