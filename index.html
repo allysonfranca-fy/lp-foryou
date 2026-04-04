@@ -19,219 +19,138 @@
 
 <body class="bg-black text-white">
 
-  <!-- HEADER -->
-  <header class="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-md z-50 border-b border-gray-800">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-gray-800">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
 
-      <img src="logo.png" class="w-32 md:w-40 drop-shadow-[0_0_20px_rgba(168,85,247,0.5)]">
+    <img src="logo.png" class="w-28 md:w-36">
 
-      <nav class="hidden md:flex gap-8 text-sm text-gray-300">
-        <a href="#servicos" class="hover:text-white">Serviços</a>
-        <a href="#como-funciona" class="hover:text-white">Como funciona</a>
-        <a href="#resultados" class="hover:text-white">Resultados</a>
-        <a href="#contato" class="hover:text-white">Contato</a>
-      </nav>
+    <!-- MENU DESKTOP -->
+    <nav class="hidden md:flex gap-8 text-sm text-gray-300">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#contato">Contato</a>
+    </nav>
 
-      <a href="#contato"
-         onclick="dataLayer.push({event: 'click_header_cta'});"
-         class="bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-2 rounded-xl text-sm font-semibold">
-        Falar com especialista
-      </a>
-
-    </div>
-  </header>
-
-  <div class="pt-24">
-
-  <!-- HERO -->
-  <section class="py-24">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-
-      <div>
-        <img src="logo.png" 
-             class="mb-6 w-64 md:w-80 drop-shadow-[0_0_30px_rgba(168,85,247,0.7)]">
-
-        <h1 class="text-4xl md:text-5xl font-bold mb-6">
-          Você pode estar perdendo dinheiro todos os dias sem perceber
-        </h1>
-
-        <p class="text-lg text-gray-300 mb-4">
-          Seus dados estão errados — e isso faz você investir em campanhas que não dão retorno.
-        </p>
-
-        <p class="text-lg text-gray-400 mb-8">
-          Nós corrigimos seu tracking e mostramos exatamente o que gera vendas de verdade.
-        </p>
-
-        <a href="#contato"
-           onclick="dataLayer.push({event: 'click_cta_hero'});"
-           class="bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-4 rounded-2xl text-lg font-semibold">
-          Queremos corrigir seu tracking agora
-        </a>
-
-      </div>
-
-      <div class="flex justify-center">
-        <img src="mascote.png" class="w-80">
-      </div>
-
-    </div>
-  </section>
-
-  <!-- PROBLEMAS -->
-  <section class="py-20 bg-gray-900">
-    <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">
-        Se você investe em tráfego, provavelmente está passando por isso:
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-6 border border-gray-700 rounded-2xl">❌ Eventos duplicados ou quebrados</div>
-        <div class="p-6 border border-gray-700 rounded-2xl">❌ Conversões não batem com vendas</div>
-        <div class="p-6 border border-gray-700 rounded-2xl">❌ Dados inconsistentes entre plataformas</div>
-        <div class="p-6 border border-gray-700 rounded-2xl">❌ Decisões baseadas em achismo</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- IMPACTO -->
-  <section class="py-20 text-center">
-    <h2 class="text-3xl font-bold mb-6 text-red-400">
-      Isso pode estar fazendo você perder dinheiro
-    </h2>
-
-    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
-      Você pode estar investindo em campanhas que parecem lucrativas…
-      quando na verdade estão gerando prejuízo.
-    </p>
-  </section>
-
-  <!-- RESULTADOS -->
-  <section id="resultados" class="py-20 text-center">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-6">Resultados que você pode esperar</h2>
-      <p class="text-lg text-gray-300">
-        ✔ Saber exatamente de onde vêm suas vendas<br>
-        ✔ Parar de investir em campanhas que não convertem<br>
-        ✔ Tomar decisões baseadas em dados reais
-      </p>
-    </div>
-  </section>
-
-  <!-- COMO FUNCIONA -->
-  <section id="como-funciona" class="py-24 text-center">
-    <h2 class="text-3xl font-bold mb-12">Como funciona nosso processo</h2>
-
-    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
-
-      <div class="p-6 border border-gray-800 rounded-2xl bg-gray-900">
-        <div class="text-purple-400 text-2xl font-bold mb-4">01</div>
-        <h3 class="font-bold mb-2">Diagnóstico</h3>
-        <p class="text-gray-400">Analisamos seu tracking atual e identificamos falhas</p>
-      </div>
-
-      <div class="p-6 border border-gray-800 rounded-2xl bg-gray-900">
-        <div class="text-blue-400 text-2xl font-bold mb-4">02</div>
-        <h3 class="font-bold mb-2">Implementação</h3>
-        <p class="text-gray-400">Corrigimos e estruturamos seus dados corretamente</p>
-      </div>
-
-      <div class="p-6 border border-gray-800 rounded-2xl bg-gray-900">
-        <div class="text-green-400 text-2xl font-bold mb-4">03</div>
-        <h3 class="font-bold mb-2">Validação</h3>
-        <p class="text-gray-400">Garantimos dados confiáveis para decisões seguras</p>
-      </div>
-
-    </div>
-
-    <div class="mt-16">
-      <a href="#contato"
-         onclick="dataLayer.push({event: 'click_cta_como_funciona'});"
-         class="bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-4 rounded-2xl text-lg font-semibold">
-        Quero implementar isso no meu negócio
-      </a>
-    </div>
-  </section>
-
-  <!-- SERVIÇOS -->
-  <section id="servicos" class="py-20 bg-gray-900">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-12">O que fazemos</h2>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="p-6 border border-gray-700 rounded-2xl">Tracking completo</div>
-        <div class="p-6 border border-gray-700 rounded-2xl">Eventos personalizados</div>
-        <div class="p-6 border border-gray-700 rounded-2xl">Auditoria de dados</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section id="contato" class="py-24 text-center">
-    <h2 class="text-3xl font-bold mb-4">Vamos corrigir isso agora</h2>
-
-    <a href="https://wa.me/5581994468364"
-       onclick="dataLayer.push({event: 'click_whatsapp'});"
-       class="bg-gradient-to-r from-purple-500 to-blue-500 px-10 py-4 rounded-2xl text-lg">
-      Falar no WhatsApp
+    <!-- CTA -->
+    <a href="#contato"
+       class="hidden md:block bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-2 rounded-xl text-sm">
+      Falar com especialista
     </a>
 
-
-  </section>
-
-  <!-- FORM -->
-  <section class="py-24 bg-gray-900">
-    <div class="max-w-3xl mx-auto px-6">
-
-      <p class="text-center text-lg mb-6 text-gray-300">
-        Prefere que nossa equipe analise seu tracking?  
-        Deixe seus dados que entraremos em contato
-      </p>
-
-      <form action="https://formspree.io/f/mykbnknn" method="POST" id="contactForm" class="space-y-6">
-
-        <input type="text" name="name" placeholder="Seu nome" required class="w-full p-4 rounded-xl text-black">
-        <input type="email" name="email" placeholder="Seu email" required class="w-full p-4 rounded-xl text-black">
-        <input type="tel" name="phone" placeholder="Seu telefone" required class="w-full p-4 rounded-xl text-black">
-
-        <button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-blue-500 py-4 rounded-2xl">
-          Enviar contato
-        </button>
-
-      </form>
-    </div>
-  </section>
-
-  <!-- TRACKING FORM -->
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function() {
-      var formData = new FormData(this);
-
-      dataLayer.push({
-        event: 'form_submit',
-        name: formData.get('name'),
-        email: formData.get('email'),
-        phone: formData.get('phone')
-      });
-    });
-  </script>
-
-  <!-- SCROLL FIX -->
-  <script>
-    if ('scrollRestoration' in history) {
-      history.scrollRestoration = 'manual';
-    }
-
-    window.onload = function () {
-      window.scrollTo(0, 0);
-    };
-  </script>
-
-  <footer class="text-center py-6 text-gray-500">
-    © 2026 For You - Data & Solutions
-  </footer>
+    <!-- BOTÃO MOBILE -->
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
 
   </div>
+
+  <!-- MENU MOBILE -->
+  <div id="mobileMenu" class="hidden px-4 pb-4">
+    <a href="#servicos" class="block py-2">Serviços</a>
+    <a href="#como-funciona" class="block py-2">Como funciona</a>
+    <a href="#resultados" class="block py-2">Resultados</a>
+    <a href="#contato" class="block py-2">Contato</a>
+
+    <a href="#contato"
+       class="block mt-3 text-center bg-gradient-to-r from-purple-500 to-blue-500 py-3 rounded-xl">
+      Falar com especialista
+    </a>
+  </div>
+</header>
+
+<div class="pt-20">
+
+<!-- HERO -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+
+    <div>
+      <img src="logo.png" class="mb-4 w-40 md:w-64">
+
+      <h1 class="text-2xl md:text-5xl font-bold mb-4 leading-tight">
+        Você pode estar perdendo dinheiro todos os dias
+      </h1>
+
+      <p class="text-gray-300 mb-6">
+        Corrigimos seu tracking e mostramos o que realmente gera vendas.
+      </p>
+
+      <a href="#contato"
+         class="block text-center bg-gradient-to-r from-purple-500 to-blue-500 py-4 rounded-xl">
+        Corrigir meu tracking
+      </a>
+    </div>
+
+    <div class="flex justify-center">
+      <img src="mascote.png" class="w-56 md:w-80">
+    </div>
+
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" class="py-16 text-center">
+  <h2 class="text-2xl md:text-3xl font-bold mb-10">Como funciona</h2>
+
+  <div class="grid gap-6 px-4 md:grid-cols-3 max-w-6xl mx-auto">
+
+    <div class="p-6 bg-gray-900 rounded-xl">
+      <div class="text-purple-400 font-bold mb-2">01</div>
+      Diagnóstico
+    </div>
+
+    <div class="p-6 bg-gray-900 rounded-xl">
+      <div class="text-blue-400 font-bold mb-2">02</div>
+      Implementação
+    </div>
+
+    <div class="p-6 bg-gray-900 rounded-xl">
+      <div class="text-green-400 font-bold mb-2">03</div>
+      Validação
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="py-16 bg-gray-900 text-center">
+  <h2 class="text-2xl md:text-3xl font-bold mb-10">Serviços</h2>
+
+  <div class="grid gap-6 px-4 md:grid-cols-3 max-w-6xl mx-auto">
+    <div class="p-6 border border-gray-700 rounded-xl">Tracking completo</div>
+    <div class="p-6 border border-gray-700 rounded-xl">Eventos personalizados</div>
+    <div class="p-6 border border-gray-700 rounded-xl">Auditoria</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contato" class="py-16 text-center">
+  <h2 class="text-2xl md:text-3xl font-bold mb-4">Fale com a gente</h2>
+
+  <a href="https://wa.me/5581994468364"
+     class="block mx-4 bg-gradient-to-r from-purple-500 to-blue-500 py-4 rounded-xl">
+    WhatsApp
+  </a>
+</section>
+
+<!-- SCRIPT MENU -->
+<script>
+  document.getElementById('menuBtn').onclick = function() {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  };
+</script>
+
+<!-- SCROLL FIX -->
+<script>
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.onload = function () {
+    window.scrollTo(0, 0);
+  };
+</script>
+
+</div>
 
 </body>
 </html>
