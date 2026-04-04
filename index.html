@@ -7,13 +7,17 @@
 
 <script src="https://cdn.tailwindcss.com"></script>
 
+<script>
+window.dataLayer = window.dataLayer || [];
+</script>
+
 <style>
 html { scroll-behavior: smooth; }
 
 .fade {
   opacity: 0;
   transform: translateY(30px);
-  transition: all .8s ease;
+  transition: all .6s ease;
 }
 
 .fade.show {
@@ -21,210 +25,261 @@ html { scroll-behavior: smooth; }
   transform: translateY(0);
 }
 </style>
-
-<script>
-window.dataLayer = window.dataLayer || [];
-</script>
 </head>
 
 <body class="bg-black text-white">
 
+<!-- BARRA DE URGÊNCIA -->
+<div class="bg-gradient-to-r from-purple-600 to-blue-600 text-center text-sm py-2">
+⚠️ Estamos com apenas 5 vagas abertas este mês
+</div>
+
 <!-- HEADER -->
-<header class="fixed w-full bg-black/80 backdrop-blur z-50 border-b border-gray-800">
-<div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
-<img src="logo.png" class="w-32">
+<header class="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-gray-800">
+<div class="max-w-6xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
+
+<img src="logo.png" class="w-28 md:w-36">
 
 <nav class="hidden md:flex gap-8 text-sm text-gray-300">
 <a href="#servicos">Serviços</a>
-<a href="#como">Como funciona</a>
-<a href="#prova">Resultados</a>
+<a href="#como-funciona">Como funciona</a>
+<a href="#resultados">Resultados</a>
 <a href="#contato">Contato</a>
 </nav>
 
-<a href="#contato" class="hidden md:block bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-2 rounded-xl">
+<a href="#contato"
+onclick="dataLayer.push({event:'click_header_cta'});"
+class="hidden md:block bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-2 rounded-xl text-sm font-semibold">
 Falar com especialista
 </a>
 
 <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+
 </div>
 
-<div id="mobileMenu" class="hidden px-4 pb-4">
+<div id="mobileMenu" class="hidden px-6 pb-4 bg-black">
 <a href="#servicos" class="block py-2">Serviços</a>
-<a href="#como" class="block py-2">Como funciona</a>
-<a href="#prova" class="block py-2">Resultados</a>
+<a href="#como-funciona" class="block py-2">Como funciona</a>
+<a href="#resultados" class="block py-2">Resultados</a>
 <a href="#contato" class="block py-2">Contato</a>
 </div>
 </header>
 
-<div class="pt-20">
+<div class="pt-28">
 
 <!-- HERO -->
-<section class="py-20 fade">
-<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-4 items-center">
+<section class="py-16 md:py-24">
+<div class="max-w-6xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-10 items-center">
 
 <div>
-<h1 class="text-3xl md:text-5xl font-bold mb-6">
-Pare de perder dinheiro com dados errados
+<img src="logo.png" class="mb-6 w-48 md:w-80">
+
+<h1 class="text-2xl md:text-5xl font-bold mb-6 leading-tight">
+Você pode estar perdendo dinheiro todos os dias sem perceber
 </h1>
 
-<p class="text-gray-300 mb-6">
-Nós estruturamos seu tracking para que você saiba exatamente o que gera lucro.
+<p class="text-gray-300 mb-4">
+Seus dados estão errados — e isso faz você investir em campanhas que não dão retorno.
+</p>
+
+<p class="text-gray-400 mb-8">
+Nós corrigimos seu tracking e mostramos exatamente o que gera vendas de verdade.
 </p>
 
 <a href="#contato"
 onclick="dataLayer.push({event:'click_cta_hero'});"
-class="block md:inline-block bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-4 rounded-xl text-center">
-Quero dados confiáveis
+class="block md:inline-block text-center bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-4 rounded-2xl text-lg font-semibold">
+Quero parar de perder dinheiro com tráfego
 </a>
 </div>
 
 <div class="flex justify-center">
-<img src="mascote.png" class="w-72">
+<img src="mascote.png" class="w-56 md:w-80">
 </div>
 
 </div>
 </section>
 
-<!-- AUTORIDADE -->
-<section class="py-16 text-center fade">
-<h2 class="text-2xl md:text-3xl font-bold mb-6">
-Especialistas em tracking e dados
+<!-- PROBLEMAS -->
+<section class="py-16 md:py-20 bg-gray-900">
+<div class="max-w-5xl mx-auto px-4 md:px-6">
+<h2 class="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-12">
+Se você investe em tráfego, provavelmente está passando por isso:
 </h2>
 
-<p class="text-gray-400 max-w-3xl mx-auto">
-Atuamos com implementação avançada de tracking para negócios digitais,
-garantindo dados confiáveis para decisões estratégicas.
-</p>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="p-6 border border-gray-700 rounded-2xl">❌ Eventos duplicados ou quebrados</div>
+<div class="p-6 border border-gray-700 rounded-2xl">❌ Conversões não batem com vendas</div>
+<div class="p-6 border border-gray-700 rounded-2xl">❌ Dados inconsistentes entre plataformas</div>
+<div class="p-6 border border-gray-700 rounded-2xl">❌ Decisões baseadas em achismo</div>
+</div>
+</div>
 </section>
-
-  <!-- COMO FUNCIONA -->
-  <section id="como-funciona" class="py-24 text-center">
-    <h2 class="text-3xl font-bold mb-12">Como funciona nosso processo</h2>
-
-    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
-
-      <div class="p-6 border border-gray-800 rounded-2xl bg-gray-900">
-        <div class="text-purple-400 text-2xl font-bold mb-4">01</div>
-        <h3 class="font-bold mb-2">Diagnóstico</h3>
-        <p class="text-gray-400">Analisamos seu tracking atual e identificamos falhas</p>
-      </div>
-
-      <div class="p-6 border border-gray-800 rounded-2xl bg-gray-900">
-        <div class="text-blue-400 text-2xl font-bold mb-4">02</div>
-        <h3 class="font-bold mb-2">Implementação</h3>
-        <p class="text-gray-400">Corrigimos e estruturamos seus dados corretamente</p>
-      </div>
-
-      <div class="p-6 border border-gray-800 rounded-2xl bg-gray-900">
-        <div class="text-green-400 text-2xl font-bold mb-4">03</div>
-        <h3 class="font-bold mb-2">Validação</h3>
-        <p class="text-gray-400">Garantimos dados confiáveis para decisões seguras</p>
-      </div>
-
-    </div>
-
-    <div class="mt-16">
-      <a href="#contato"
-         onclick="dataLayer.push({event: 'click_cta_como_funciona'});"
-         class="bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-4 rounded-2xl text-lg font-semibold">
-        Quero implementar isso no meu negócio
-      </a>
-    </div>
-  </section>
 
 <!-- PROVA SOCIAL -->
-<section id="prova" class="py-20 fade">
-<div class="max-w-6xl mx-auto text-center px-4">
-
-<h2 class="text-3xl font-bold mb-12">
-Empresas já estão tomando decisões melhores com dados confiáveis
+<section class="py-16 text-center">
+<h2 class="text-2xl md:text-3xl font-bold mb-10">
+Empresas estão perdendo dinheiro sem saber
 </h2>
 
-<div class="grid md:grid-cols-3 gap-6">
+<div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 md:px-6">
 
-<div class="p-6 bg-gray-900 rounded-xl">
-"Agora sabemos exatamente o que gera venda"
+<div class="bg-gray-900 p-6 rounded-xl">
+"Descobrimos que estávamos investindo errado há meses"
 </div>
 
-<div class="p-6 bg-gray-900 rounded-xl">
-"Paramos de desperdiçar verba"
+<div class="bg-gray-900 p-6 rounded-xl">
+"Depois do ajuste, reduzimos custo por lead"
 </div>
 
-<div class="p-6 bg-gray-900 rounded-xl">
-"Tracking finalmente confiável"
+<div class="bg-gray-900 p-6 rounded-xl">
+"Agora confiamos 100% nos dados"
 </div>
 
 </div>
+</section>
 
+<!-- RESULTADOS -->
+<section id="resultados" class="py-16 md:py-20 text-center">
+<div class="max-w-4xl mx-auto px-4 md:px-6">
+<h2 class="text-2xl md:text-3xl font-bold mb-6">Resultados que você pode esperar</h2>
+<p class="text-gray-300">
+✔ Saber exatamente de onde vêm suas vendas<br>
+✔ Parar de investir em campanhas que não convertem<br>
+✔ Tomar decisões baseadas em dados reais
+</p>
+</div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" class="py-16 md:py-24 text-center">
+<h2 class="text-2xl md:text-3xl font-bold mb-10 md:mb-12">Como funciona nosso processo</h2>
+
+<div class="max-w-6xl mx-auto px-4 md:px-6 grid gap-6 md:grid-cols-3">
+
+<div class="p-6 bg-gray-900 rounded-2xl">
+<div class="text-purple-400 font-bold mb-3">01</div>
+Diagnóstico completo
+</div>
+
+<div class="p-6 bg-gray-900 rounded-2xl">
+<div class="text-blue-400 font-bold mb-3">02</div>
+Implementação correta
+</div>
+
+<div class="p-6 bg-gray-900 rounded-2xl">
+<div class="text-green-400 font-bold mb-3">03</div>
+Validação dos dados
+</div>
+
+</div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="py-16 md:py-20 bg-gray-900 text-center">
+<h2 class="text-2xl md:text-3xl font-bold mb-10 md:mb-12">O que fazemos</h2>
+
+<div class="max-w-6xl mx-auto px-4 md:px-6 grid gap-6 md:grid-cols-3">
+<div class="p-6 border border-gray-700 rounded-2xl">Tracking completo</div>
+<div class="p-6 border border-gray-700 rounded-2xl">Eventos personalizados</div>
+<div class="p-6 border border-gray-700 rounded-2xl">Auditoria de dados</div>
 </div>
 </section>
 
 <!-- CTA -->
-<section id="contato" class="py-20 text-center fade">
-<h2 class="text-3xl font-bold mb-4">
-Vamos ajustar seus dados agora
-</h2>
+<section id="contato" class="py-16 md:py-24 text-center">
+<h2 class="text-2xl md:text-3xl font-bold mb-6">Vamos corrigir isso agora</h2>
 
 <a href="https://wa.me/5581994468364"
 onclick="dataLayer.push({event:'click_whatsapp'});"
-class="block md:inline-block bg-gradient-to-r from-purple-500 to-blue-500 px-10 py-4 rounded-xl">
+class="block md:inline-block mx-4 md:mx-0 bg-gradient-to-r from-purple-500 to-blue-500 px-10 py-4 rounded-2xl">
 Falar no WhatsApp
 </a>
 
 <p class="text-yellow-400 mt-4 text-sm">
-Atendimento limitado
+Atendemos no máximo 5 projetos por mês
 </p>
 </section>
 
 <!-- FORM -->
-<section class="py-20 bg-gray-900 fade">
-<div class="max-w-xl mx-auto px-4">
+<section class="py-16 md:py-24 bg-gray-900">
+<div class="max-w-3xl mx-auto px-4 md:px-6">
+
+<p class="text-center text-gray-300 mb-4">
+✔ Sem compromisso • ✔ Resposta em até 24h • ✔ Análise gratuita
+</p>
 
 <form action="https://formspree.io/f/mykbnknn" method="POST" id="contactForm" class="space-y-4">
 
-<input type="text" name="name" placeholder="Nome" required class="w-full p-4 rounded text-black">
-<input type="email" name="email" placeholder="Email" required class="w-full p-4 rounded text-black">
-<input type="tel" name="phone" placeholder="Telefone" required class="w-full p-4 rounded text-black">
+<input type="text" name="name" placeholder="Seu nome" required class="w-full p-4 rounded-xl text-black">
+<input type="email" name="email" placeholder="Seu email" required class="w-full p-4 rounded-xl text-black">
+<input type="tel" name="phone" placeholder="Seu telefone" required class="w-full p-4 rounded-xl text-black">
 
-<button class="w-full bg-gradient-to-r from-purple-500 to-blue-500 py-4 rounded-xl">
-Enviar
+<button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-blue-500 py-4 rounded-2xl">
+Quero receber uma análise gratuita
 </button>
 
 </form>
 
+<p id="formSuccess" class="hidden text-green-400 text-center mt-4">
+Mensagem enviada com sucesso!
+</p>
+
 </div>
 </section>
 
-<!-- SCRIPT -->
+<!-- CTA FLUTUANTE MOBILE -->
+<a href="https://wa.me/5581994468364"
+onclick="dataLayer.push({event:'click_whatsapp_float'});"
+class="fixed bottom-4 left-4 right-4 md:hidden bg-green-500 text-center py-4 rounded-xl text-black font-bold shadow-lg z-50">
+Falar no WhatsApp
+</a>
+
+<!-- SCRIPTS -->
 <script>
-document.getElementById('menuBtn').onclick = () => {
-document.getElementById('mobileMenu').classList.toggle('hidden');
+document.getElementById('menuBtn').onclick = function() {
+  document.getElementById('mobileMenu').classList.toggle('hidden');
 };
 
-document.getElementById('contactForm').addEventListener('submit', function(){
-let data = new FormData(this);
+document.getElementById('contactForm').addEventListener('submit', function() {
+  var formData = new FormData(this);
 
-dataLayer.push({
-event:'form_submit',
-name:data.get('name'),
-email:data.get('email'),
-phone:data.get('phone')
+  dataLayer.push({
+    event: 'form_submit',
+    name: formData.get('name'),
+    email: formData.get('email'),
+    phone: formData.get('phone')
+  });
+
+  document.getElementById('formSuccess').classList.remove('hidden');
 });
+
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('load', function () {
+  window.scrollTo(0, 0);
 });
 
 // animação
 const observer = new IntersectionObserver(entries=>{
-entries.forEach(e=>{
-if(e.isIntersecting){
-e.target.classList.add('show');
-}
-});
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('show');
+    }
+  });
 });
 
-document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+document.querySelectorAll('section').forEach(el=>{
+  el.classList.add('fade');
+  observer.observe(el);
+});
 </script>
 
-</div>
+<footer class="text-center py-6 text-gray-500">
+© 2026 For You - Data & Solutions
+</footer>
 
 </body>
 </html>
