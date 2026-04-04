@@ -13,16 +13,25 @@
 
 <body class="bg-black text-white">
 
-  <!-- HEADER FIXO -->
+  <!-- HEADER -->
   <header class="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-md z-50 border-b border-gray-800">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
       <img src="logo.png" class="w-32 md:w-40 drop-shadow-[0_0_20px_rgba(168,85,247,0.5)]">
+
+      <nav class="hidden md:flex gap-8 text-sm text-gray-300">
+        <a href="#servicos" class="hover:text-white">Serviços</a>
+        <a href="#como-funciona" class="hover:text-white">Como funciona</a>
+        <a href="#resultados" class="hover:text-white">Resultados</a>
+        <a href="#contato" class="hover:text-white">Contato</a>
+      </nav>
 
       <a href="#contato"
          onclick="dataLayer.push({event: 'click_header_cta'});"
          class="bg-gradient-to-r from-purple-500 to-blue-500 px-5 py-2 rounded-xl text-sm font-semibold">
         Falar com especialista
       </a>
+
     </div>
   </header>
 
@@ -34,7 +43,7 @@
 
       <div>
         <img src="logo.png" 
-             class="mb-6 w-64 md:w-80 drop-shadow-[0_0_30px_rgba(168,85,247,0.7)] animate-pulse">
+             class="mb-6 w-64 md:w-80 drop-shadow-[0_0_30px_rgba(168,85,247,0.7)]">
 
         <h1 class="text-4xl md:text-5xl font-bold mb-6">
           Você pode estar perdendo dinheiro todos os dias sem perceber
@@ -54,7 +63,6 @@
           Queremos corrigir seu tracking agora
         </a>
 
-        <p class="text-sm mt-4 text-gray-400">Resposta em até 10 minutos</p>
       </div>
 
       <div class="flex justify-center">
@@ -74,7 +82,7 @@
       <div class="grid md:grid-cols-2 gap-6">
         <div class="p-6 border border-gray-700 rounded-2xl">❌ Eventos duplicados ou quebrados</div>
         <div class="p-6 border border-gray-700 rounded-2xl">❌ Conversões não batem com vendas</div>
-        <div class="p-6 border border-gray-700 rounded-2xl">❌ Pixel e GA4 com dados inconsistentes</div>
+        <div class="p-6 border border-gray-700 rounded-2xl">❌ Dados inconsistentes entre plataformas</div>
         <div class="p-6 border border-gray-700 rounded-2xl">❌ Decisões baseadas em achismo</div>
       </div>
     </div>
@@ -87,13 +95,13 @@
     </h2>
 
     <p class="text-lg text-gray-300 max-w-3xl mx-auto">
-      Você pode estar investindo R$2.000 em anúncios achando que dá lucro…
-      quando na verdade está no prejuízo — e nem sabe.
+      Você pode estar investindo em campanhas que parecem lucrativas…
+      quando na verdade estão gerando prejuízo.
     </p>
   </section>
 
   <!-- RESULTADOS -->
-  <section class="py-20 text-center">
+  <section id="resultados" class="py-20 text-center">
     <div class="max-w-4xl mx-auto px-6">
       <h2 class="text-3xl font-bold mb-6">Resultados que você pode esperar</h2>
       <p class="text-lg text-gray-300">
@@ -104,46 +112,49 @@
     </div>
   </section>
 
-  <!-- SERVIÇOS -->
-  <section class="py-20 bg-gray-900">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">O que fazemos</h2>
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="py-24 bg-black text-center">
+    <h2 class="text-3xl font-bold mb-12">Como funciona nosso processo</h2>
 
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="p-6 border border-gray-700 rounded-2xl">
-          <h3 class="font-bold mb-2">Tracking Completo</h3>
-          <p>GA4, GTM e Pixels implementados corretamente</p>
-        </div>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
 
-        <div class="p-6 border border-gray-700 rounded-2xl">
-          <h3 class="font-bold mb-2">Eventos Personalizados</h3>
-          <p>DataLayer estruturado para e-commerce e leads</p>
-        </div>
-
-        <div class="p-6 border border-gray-700 rounded-2xl">
-          <h3 class="font-bold mb-2">Auditoria</h3>
-          <p>Identificamos erros críticos no seu tracking</p>
-        </div>
+      <div class="p-6 border border-gray-800 rounded-2xl bg-gray-900">
+        <div class="text-purple-400 text-2xl font-bold mb-4">01</div>
+        <h3 class="font-bold mb-2">Diagnóstico</h3>
+        <p class="text-gray-400">Analisamos seu tracking atual e identificamos falhas</p>
       </div>
+
+      <div class="p-6 border border-gray-800 rounded-2xl bg-gray-900">
+        <div class="text-blue-400 text-2xl font-bold mb-4">02</div>
+        <h3 class="font-bold mb-2">Implementação</h3>
+        <p class="text-gray-400">Corrigimos e estruturamos seus dados corretamente</p>
+      </div>
+
+      <div class="p-6 border border-gray-800 rounded-2xl bg-gray-900">
+        <div class="text-green-400 text-2xl font-bold mb-4">03</div>
+        <h3 class="font-bold mb-2">Validação</h3>
+        <p class="text-gray-400">Garantimos dados confiáveis para decisões seguras</p>
+      </div>
+
     </div>
   </section>
 
-  <!-- PROVA -->
-  <section class="py-20 text-center">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-6">Experiência prática</h2>
-      <p class="text-lg text-gray-300">
-        +50 projetos de tracking implementados<br>
-        Projetos de e-commerce e geração de leads<br>
-        Experiência com GA4, GTM, Meta e integrações
-      </p>
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">O que fazemos</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 border border-gray-700 rounded-2xl">Tracking completo</div>
+        <div class="p-6 border border-gray-700 rounded-2xl">Eventos personalizados</div>
+        <div class="p-6 border border-gray-700 rounded-2xl">Auditoria de dados</div>
+      </div>
     </div>
   </section>
 
   <!-- CTA -->
   <section id="contato" class="py-24 text-center">
     <h2 class="text-3xl font-bold mb-4">Vamos corrigir isso agora</h2>
-    <p class="mb-6 text-gray-300">Clique abaixo e fale com nosso time</p>
 
     <a href="https://wa.me/5581994468364"
        onclick="dataLayer.push({event: 'click_whatsapp'});"
@@ -166,8 +177,6 @@
       </p>
 
       <form action="https://formspree.io/f/mykbnknn" method="POST" id="contactForm" class="space-y-6">
-
-        <input type="hidden" name="_subject" value="Novo lead - LP ForYou">
 
         <input type="text" name="name" placeholder="Seu nome" required class="w-full p-4 rounded-xl text-black">
         <input type="email" name="email" placeholder="Seu email" required class="w-full p-4 rounded-xl text-black">
