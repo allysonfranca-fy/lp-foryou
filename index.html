@@ -145,9 +145,31 @@ Empresas que precisam de dados confiáveis já estão fazendo isso:
 </div>
 </section>
 
+<!-- CLIENTES -->
+<section class="py-16 md:py-20 text-center fade">
+<div class="max-w-6xl mx-auto px-4 md:px-6">
+
+<p class="text-gray-500 text-sm mb-6">
+Empresas que confiam no nosso trabalho
+</p>
+
+<div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center opacity-70">
+
+<img src="clientes/cliente1.png" class="mx-auto max-h-12 grayscale hover:grayscale-0 transition">
+<img src="clientes/cliente2.png" class="mx-auto max-h-12 grayscale hover:grayscale-0 transition">
+<img src="clientes/cliente3.png" class="mx-auto max-h-12 grayscale hover:grayscale-0 transition">
+<img src="clientes/cliente4.png" class="mx-auto max-h-12 grayscale hover:grayscale-0 transition">
+<img src="clientes/cliente5.png" class="mx-auto max-h-12 grayscale hover:grayscale-0 transition">
+
+</div>
+
+</div>
+</section>
+
 <!-- RESULTADOS -->
 <section id="resultados" class="py-16 md:py-20 text-center fade">
 <div class="max-w-6xl mx-auto px-4 md:px-6">
+
 <h2 class="text-2xl md:text-3xl font-bold mb-6">
 Impacto direto após correção de tracking
 </h2>
@@ -264,18 +286,18 @@ Falar no WhatsApp
 <div class="max-w-3xl mx-auto px-4 md:px-6">
 
 <div class="text-center mb-8">
-  <h3 class="text-xl md:text-2xl font-semibold mb-3">
-    Solicite uma análise do seu tracking
-  </h3>
+<h3 class="text-xl md:text-2xl font-semibold mb-3">
+Solicite uma análise do seu tracking
+</h3>
 
-  <p class="text-gray-400 max-w-xl mx-auto">
-    Preencha seus dados e nossa equipe entrará em contato para entender seu cenário
-    e identificar possíveis melhorias na sua estrutura de dados.
-  </p>
+<p class="text-gray-400 max-w-xl mx-auto">
+Preencha seus dados e nossa equipe entrará em contato para entender seu cenário
+e identificar possíveis melhorias na sua estrutura de dados.
+</p>
 
-  <p class="text-sm text-gray-500 mt-3">
-    ✔ Sem compromisso • ✔ Resposta em até 24h
-  </p>
+<p class="text-sm text-gray-500 mt-3">
+✔ Sem compromisso • ✔ Resposta em até 24h
+</p>
 </div>
 
 <form action="https://formspree.io/f/mykbnknn" method="POST" id="contactForm" class="space-y-4">
@@ -297,32 +319,32 @@ Mensagem enviada com sucesso!
 
 <script>
 document.getElementById('menuBtn').onclick = function() {
-  document.getElementById('mobileMenu').classList.toggle('hidden');
+document.getElementById('mobileMenu').classList.toggle('hidden');
 };
 
 document.getElementById('contactForm').addEventListener('submit', function() {
-  var formData = new FormData(this);
+var formData = new FormData(this);
 
-  dataLayer.push({
-    event: 'form_submit',
-    name: formData.get('name'),
-    email: formData.get('email'),
-    phone: formData.get('phone')
-  });
+dataLayer.push({
+event: 'form_submit',
+name: formData.get('name'),
+email: formData.get('email'),
+phone: formData.get('phone')
+});
 
-  document.getElementById('formSuccess').classList.remove('hidden');
+document.getElementById('formSuccess').classList.remove('hidden');
 });
 
 const observer = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add('show');
-    }
-  });
+entries.forEach(e=>{
+if(e.isIntersecting){
+e.target.classList.add('show');
+}
+});
 });
 
 document.querySelectorAll('.fade').forEach(el=>{
-  observer.observe(el);
+observer.observe(el);
 });
 </script>
 
