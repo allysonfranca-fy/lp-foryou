@@ -123,26 +123,84 @@ Sem compromisso • Resposta em até 24h
 </div>
 </section>
 
+<!-- PROBLEMAS -->
+<section class="py-16 md:py-20 bg-gray-900 fade">
+<div class="max-w-5xl mx-auto px-4 md:px-6">
+<h2 class="text-2xl md:text-3xl font-bold text-center mb-12">
+A maioria das empresas toma decisões com dados incorretos — e paga por isso sem perceber
+</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+<div class="p-6 border border-gray-700 rounded-2xl">❌ Eventos duplicados ou quebrados</div>
+<div class="p-6 border border-gray-700 rounded-2xl">❌ Conversões não batem com vendas</div>
+<div class="p-6 border border-gray-700 rounded-2xl">❌ Dados inconsistentes entre plataformas</div>
+<div class="p-6 border border-gray-700 rounded-2xl">❌ Decisões baseadas em achismo</div>
+</div>
+</div>
+</section>
+
+<!-- PROVA SOCIAL -->
+<section class="py-12 border-y border-gray-800 text-center fade">
+<div class="max-w-6xl mx-auto px-4 md:px-6">
+
+<p class="text-gray-400 mb-6">
+Empresas que precisam de dados confiáveis já estão fazendo isso:
+</p>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-lg font-semibold">
+<div class="bg-gray-900 p-6 rounded-xl">+50<br><span class="text-sm text-gray-400">projetos</span></div>
+<div class="bg-gray-900 p-6 rounded-xl">100%<br><span class="text-sm text-gray-400">dados confiáveis</span></div>
+<div class="bg-gray-900 p-6 rounded-xl">-30%<br><span class="text-sm text-gray-400">custo médio</span></div>
+<div class="bg-gray-900 p-6 rounded-xl">+ROI<br><span class="text-sm text-gray-400">performance</span></div>
+</div>
+
+</div>
+</section>
+
+<!-- CLIENTES -->
+<section class="py-16 md:py-20 text-center fade">
+<div class="max-w-5xl mx-auto px-4 md:px-6">
+
+<p class="text-gray-400 mb-6">
+Algumas das empresas que confiam no nosso trabalho
+</p>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 flex items-center justify-center">
+<img src="clientes/cliente1.png" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition">
+</div>
+<div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 flex items-center justify-center">
+<img src="clientes/cliente2.png" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition">
+</div>
+<div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 flex items-center justify-center">
+<img src="clientes/cliente3.png" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition">
+</div>
+<div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 flex items-center justify-center">
+<img src="clientes/cliente4.png" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition">
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CTA -->
+<section id="contato" class="py-16 md:py-24 text-center fade">
+<h2 class="text-2xl md:text-3xl font-bold mb-6">
+Vamos corrigir seus dados agora
+</h2>
+
+<a href="https://wa.me/5581994468364"
+onclick="dataLayer.push({event:'click_whatsapp'});"
+class="bg-gradient-to-r from-purple-500 to-blue-500 px-10 py-4 rounded-2xl">
+Falar no WhatsApp
+</a>
+</section>
+
 <!-- FORM -->
 <section class="py-16 md:py-24 bg-gray-900 fade">
 <div class="max-w-3xl mx-auto px-4 md:px-6">
 
 <div id="formContainer">
-
-<div class="text-center mb-8">
-<h3 class="text-xl md:text-2xl font-semibold mb-3">
-Solicite uma análise do seu tracking
-</h3>
-
-<p class="text-gray-400 max-w-xl mx-auto">
-Preencha seus dados e nossa equipe entrará em contato para entender seu cenário
-e identificar possíveis melhorias na sua estrutura de dados.
-</p>
-
-<p class="text-sm text-gray-500 mt-3">
-✔ Sem compromisso • ✔ Resposta em até 24h
-</p>
-</div>
 
 <form action="https://formspree.io/f/mykbnknn" method="POST" id="contactForm" class="space-y-4">
 <input type="text" name="name" placeholder="Seu nome" required class="w-full p-4 rounded-xl text-black">
@@ -156,31 +214,9 @@ Quero receber uma análise gratuita
 
 </div>
 
-<!-- SUCCESS STATE -->
 <div id="successState" class="hidden text-center">
-
-<div class="bg-gray-900 border border-green-500 rounded-2xl p-10">
-
-<h3 class="text-2xl font-bold text-green-400 mb-4">
-✅ Recebemos seus dados!
-</h3>
-
-<p class="text-gray-300 mb-4">
-Nossa equipe já foi notificada e vai analisar seu cenário.
-</p>
-
-<p class="text-gray-400 text-sm">
-Você receberá um contato em até 24h.
-</p>
-
-<a href="https://wa.me/5581994468364"
-onclick="dataLayer.push({event:'click_whatsapp_pos_lead'});"
-class="inline-block mt-6 bg-gradient-to-r from-purple-500 to-blue-500 px-6 py-3 rounded-xl">
-Falar direto no WhatsApp
-</a>
-
-</div>
-
+<h3 class="text-2xl text-green-400">✅ Recebemos seus dados!</h3>
+<p class="text-gray-400 mt-2">Entraremos em contato em breve.</p>
 </div>
 
 </div>
@@ -207,38 +243,18 @@ phone: formData.get('phone')
 fetch(form.action, {
 method: 'POST',
 body: formData,
-headers: {
-'Accept': 'application/json'
-}
+headers: {'Accept': 'application/json'}
 }).then(response => {
 
 if (response.ok) {
-
 document.getElementById('formContainer').style.display = 'none';
 document.getElementById('successState').classList.remove('hidden');
-
 form.reset();
-
 } else {
-alert('Erro ao enviar. Tente novamente.');
+alert('Erro ao enviar');
 }
 
-}).catch(() => {
-alert('Erro de conexão.');
 });
-
-});
-
-const observer = new IntersectionObserver(entries=>{
-entries.forEach(e=>{
-if(e.isIntersecting){
-e.target.classList.add('show');
-}
-});
-});
-
-document.querySelectorAll('.fade').forEach(el=>{
-observer.observe(el);
 });
 </script>
 
